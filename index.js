@@ -105,8 +105,8 @@ inquirer
     } else {
         answers.badge = '![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)';
     }
-
-    fs.writeFile('readme.md', readmeContent, (err) =>
+  //code that creates the new readme file and writes the content from readmeContent to it.
+    fs.writeFile('generated-readme.md', readmeContent, (err) =>
     err ? console.log(err) : console.log('Successfully created readme!')
   );
 });
